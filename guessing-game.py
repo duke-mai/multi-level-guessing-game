@@ -63,18 +63,18 @@ def hard():
 def try_again():
     print()
     again = input('Do you want to play again? (yes/no) ')
-    if again in ['y', 'Y', 'yes', 'YES']:
+    if again.lower() in ['y', 'yes']:
         welcome()
-    elif again in ['n', 'N', 'no', 'NO']:
-        print('Thanks for playing the game')
+    elif again.lower() in ['n', 'no']:
+        print('Thanks for playing the game!')
     else:
-        print('INVALID VALUE')
+        print('INVALID VALUE!')
         try_again()
 
 
 def welcome():
     print(
-        'Welcome to the game \'Guess My Number\'!',
+        'Welcome to the game "Guess My Number"!',
         'Choose a level:',
         '1. Easy',
         '2. Medium',
@@ -94,7 +94,7 @@ def welcome():
         hard()
         try_again()
     else:
-        print('INVALID VALUE\n')
+        print('INVALID VALUE!\n')
         welcome()
 
 
