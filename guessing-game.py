@@ -1,3 +1,11 @@
+#
+# File:         guessing-game.py
+# Author:       Tan Duc Mai
+# Email ID:     tan.duc.work@gmail.com
+# Date:         20/9/2021
+# Description:  A number guessing game, divided into three levels of diffculties.
+# 
+
 import random
 
 
