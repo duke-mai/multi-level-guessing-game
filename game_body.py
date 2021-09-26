@@ -1,15 +1,15 @@
 #
-# File:         guessing-game.py
+# File:         game_body.py
 # Author:       Tan Duc Mai
 # Email ID:     tan.duc.work@gmail.com
 # Date:         20/9/2021
-# Description:  A number guessing game, divided into three levels of diffculties.
+# Description:  The CPU of the game, controlling how the game works.
 # 
 
 import random
 
 
-def guessing_game(GUESS_RANGE, GUESS_LIMIT):
+def guessing(GUESS_RANGE, GUESS_LIMIT):
     # Set the initial values.
     RANDOM = random.randint(1, GUESS_RANGE)
     GUESS = int(input('What is your guess? '))
@@ -51,59 +51,3 @@ def InputValidation(GUESS, GUESS_RANGE):
         print('TRY AGAIN! Your guess is out of range!\n')
         GUESS = int(input('What is your guess? '))
     return GUESS
-
-
-def easy():
-    print('You are to guess a number between 1 and 10 in no more than 6 attempts.')
-    guessing_game(10, 6)
-
-
-def medium():
-    print('You are to guess a number between 1 and 20 in no more than 4 attempts.')
-    guessing_game(20, 4)
-
-
-def hard():
-    print('You are to guess a number between 1 and 50 in no more than 3 attempts.')
-    guessing_game(50, 3)
-
-
-def try_again():
-    print()
-    again = input('Do you want to play again? [Y/n] ')
-    if again.lower() in ['y', 'yes']:
-        welcome()
-    elif again.lower() in ['n', 'no']:
-        print('Thanks for playing the game!')
-    else:
-        print('INVALID VALUE!')
-        try_again()
-
-
-def welcome():
-    print(
-        'Welcome to the game "Guess My Number"!',
-        'Choose a level:',
-        '1. Easy',
-        '2. Medium',
-        '3. Hard',
-        sep = '\n',
-    )
-
-    level = int(input('Pick a number: '))
-
-    if level == 1:
-        easy()
-        try_again()
-    elif level == 2:
-        medium()
-        try_again()
-    elif level == 3:
-        hard()
-        try_again()
-    else:
-        print('INVALID VALUE!\n')
-        welcome()
-
-
-welcome()
