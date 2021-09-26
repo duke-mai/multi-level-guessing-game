@@ -62,7 +62,7 @@ def hard():
 
 def try_again():
     print()
-    again = input('Do you want to play again? (yes/no) ')
+    again = input('Do you want to play again? [Y/n] ')
     if again.lower() in ['y', 'yes']:
         welcome()
     elif again.lower() in ['n', 'no']:
