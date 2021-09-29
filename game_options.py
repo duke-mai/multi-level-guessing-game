@@ -1,10 +1,12 @@
 #
 # File:         game_options.py
 # Author:       Tan Duc Mai
-# Email ID:     tan.duc.work@gmail.com
-# Date:         20/9/2021
-# Description:  Contains all of the options for the user to choose.
-# 
+# Email:        tan.duc.work@gmail.com
+# Date:         15/7/2021
+# Description:  Introduce the user to the game, asking them to choose level.
+#   I hereby declare that I completed this work without any improper help
+#   from a third party and without using any aids other than those cited.
+#
 
 """
 The first module contains the main part of the game, which is processing
