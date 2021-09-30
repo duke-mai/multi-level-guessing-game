@@ -36,14 +36,14 @@ def start_the_game():
     sleep(1)
     
     if level == 1:
-        easy()
-        try_again()
+        option.easy()
+        option.try_again()
     elif level == 2:
-        medium()
-        try_again()
+        option.medium()
+        option.try_again()
     elif level == 3:
-        hard()
-        try_again()
+        option.hard()
+        option.try_again()
     else:
         print('INVALID VALUE! Please try again.\n')
-        welcome()
+        start_the_game()
