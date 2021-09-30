@@ -37,8 +37,9 @@ def hard():
 def try_again():
     print()
     again = input('Do you want to play again? [Y/n] ')
+    print()
     if again.lower() in ['y', 'yes']:
-        welcome.welcome()
+        welcome.start_the_game()
     elif again.lower() in ['n', 'no']:
         print('Thanks for playing the game!')
     else:
