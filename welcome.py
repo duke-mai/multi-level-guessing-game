@@ -9,34 +9,41 @@
 #
 
 """
-This module contains the user choice of easy, medium, and hard mode.
+The game_options module contains the user choice of easy, medium, and hard mode.
 It also asks whether the user want to play the game again.
+The time.sleep() function gives break between each set of message.
 """
 
 import game_options as option
+from time import sleep
 
 
 def start_the_game():
-    print(
-        'Welcome to the game "Guess My Number"!',
-        'Choose a level:',
-        '1. Easy',
-        '2. Medium',
-        '3. Hard',
-        sep = '\n',
+    print('Hello, Welcome to the Number Guessing Game!')
+    name = input('I\'m Henry! What\'s Your Name? ')
+    sleep(1)
+    
+    print(f'Okay, {name}. Let\'s Begin The Guessing Game!')
+    print('Choose a level:',
+          '1. Easy',
+          '2. Medium',
+          '3. Hard',
+          sep = '\n',
     )
-
+    sleep(1)
     level = int(input('Pick a number: '))
-
+    print()
+    sleep(1)
+    
     if level == 1:
-        option.easy()
-        option.try_again()
+        easy()
+        try_again()
     elif level == 2:
-        option.medium()
-        option.try_again()
+        medium()
+        try_again()
     elif level == 3:
-        option.hard()
-        option.try_again()
+        hard()
+        try_again()
     else:
-        print('INVALID VALUE!\n')
+        print('INVALID VALUE! Please try again.\n')
         welcome()
