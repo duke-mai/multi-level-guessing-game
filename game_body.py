@@ -43,7 +43,7 @@ def guessing(GUESS_RANGE, GUESS_LIMIT):
                 print(f'You nailed it! However, it took you all the {ATTEMPTS_ALLOWED} attempts.')
             else:
                 print(
-                    f'GAME OVER! It took you more than {ATTEMPTS_ALLOWED} attempts.'
+                    f'GAME OVER! It took you more than {ATTEMPTS_ALLOWED} attempts. '
                     f'The correct number is {RANDOM}.'
                 )
 
