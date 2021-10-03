@@ -2,7 +2,7 @@
 **Aim**: Create a number guessing game divided into three levels of difficulty
 I divide this project into small procedures and place them in separate files to be used as modules.
 
-I begin by greeting the user and prompt them to choose which level (easy, medium, or hard) they want to play | welcome.py</br>With that option, I then start the corresponding procedure which is stored in game_options.py
+I begin by greeting the user and prompt them to choose which level (easy, medium, or hard) they want to play | welcome.py. With that option, I then start the corresponding procedure which is stored in game_options.py
 
 Taking easy level as an example, when the game starts (which now go to the module game_body.py, I generate random numbers by importing the random module and referencing the randint() function defined in that module, ranging from 1 to 10. I then assign the random number generated to a variable called RANDOM. Since the user fails after six tries, I assign 6 to the ATTEMPTS_ALLOWED variable and they will lose one every time a guess is made. The guess is assigned to the GUESS variable. A False Boolean is assigned to the done variable to keep the game running until it becomes True, which means that the game is done
 
