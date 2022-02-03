@@ -63,5 +63,5 @@ An example of an invalid guess being ruled out and no chance is taken away
 ![An example of an invalid guess being ruled out and no chance is taken
 away](/assets/invalid-guess.png)
 
-An example of guessing correctly
+An example of guessing correctly<br>
 ![An example of guessing correctly](/assets/correct-guess.png)
