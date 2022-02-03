@@ -49,9 +49,8 @@ In both cases, the game ends and the while loop is finished.
 _While_ loops | _For_ loops
 ------------ | -------------
 Condition-controlled loop  | Count-controlled loop
-They are better to use whenever the programmer needs to keep on repeating some
-code while a certain condition is met. | They are not necessary but simplify the
-code when the number of repetitions is known.
+They are better to use whenever the programmer needs to keep on repeating some code while a certain condition is met. | They are not necessary but simplify the code when the number of repetitions is known.
+
 <p>Regarding the while loop evaluating whether the guessed number is valid, it
 helps rule out any invalid guess. In this case, the number of times this loop
 would repeat is unpredictable, given that it depends upon the input from the
