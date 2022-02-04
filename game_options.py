@@ -1,24 +1,28 @@
+#!/usr/bin/python3
+
 #
 # File:         game_options.py
 # Author:       Tan Duc Mai
 # Email:        tan.duc.work@gmail.com
-# Date:         15/7/2021
-# Description:  Introduce the user to the game, asking them to choose level.
+# Date:         15-Jul-2021
+# Description:  Determines game modes and the 'try_again' option.
 #   I hereby declare that I completed this work without any improper help
 #   from a third party and without using any aids other than those cited.
 #
 
+
+# ------------------------------- Module Imports ------------------------------
 """
 The first module contains the main part of the game, which is processing
 the guess and validate user input.
 The second module is the introduction to the game, where the user is asked
 to choose a mode to play.
 """
-
 from game_body import guessing as game
 import welcome
 
 
+# ---------------------------- Function Definitions ---------------------------
 def easy():
     print('You are to guess a number between 1 and 10 in no more than 6 attempts.')
     game(10, 6)

@@ -1,23 +1,27 @@
+#!/usr/bin/python3
+
 #
 # File:         welcome.py
 # Author:       Tan Duc Mai
 # Email:        tan.duc.work@gmail.com
-# Date:         15/7/2021
-# Description:  Introduce the user to the game, asking them to choose level.
+# Date:         15-Jul-2021
+# Description:  Introduces the user to the game, asking them to choose level.
 #   I hereby declare that I completed this work without any improper help
 #   from a third party and without using any aids other than those cited.
 #
 
+
+# ------------------------------- Module Imports ------------------------------
 """
 The game_options module contains the user choice of easy, medium, and hard mode.
 It also asks whether the user want to play the game again.
 The time.sleep() function gives break between each set of message.
 """
-
 import game_options as option
 from time import sleep
 
 
+# ---------------------------- Function Definition ----------------------------
 def start_the_game():
     print('Hello, Welcome to the Number Guessing Game!')
     name = input('I\'m Henry! What\'s Your Name? ')
