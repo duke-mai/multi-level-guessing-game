@@ -18,7 +18,7 @@ the guess and validate user input.
 The second module is the introduction to the game, where the user is asked
 to choose a mode to play.
 """
-from game_body import guessing as game
+from operations import guessing as game
 import welcome
 
 

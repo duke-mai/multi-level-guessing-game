@@ -17,7 +17,7 @@ The game_options module contains the user choice of easy, medium, and hard mode.
 It also asks whether the user want to play the game again.
 The time.sleep() function gives break between each set of message.
 """
-import game_options as option
+import options as option
 from time import sleep
 
 
