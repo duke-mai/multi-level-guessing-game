@@ -1,27 +1,28 @@
-# Number Guessing Game
-**Aim**: Create a number guessing game divided into three levels of difficulty I
-divide this project into small procedures and place them in separate files to be
-used as modules.
+# Aim
+Create a number guessing game divided into three levels of difficulty.
+I divide this project into small functions and place them in separate files to
+be used as modules.
 
+# Implementation
 I begin by greeting the user and prompt them to choose which level (easy,
 medium, or hard) they want to play | welcome.py. With that option, I then start
-the corresponding procedure which is stored in game_options.py
+the corresponding function which is stored in game_options.py
 
 Taking easy level as an example, when the game starts (which now go to the
 module game_body.py, I generate random numbers by importing the random module
-and referencing the randint() function defined in that module, ranging from 1 to
-10. I then assign the random number generated to a variable called RANDOM. Since
-the user fails after six tries, I assign 6 to the ATTEMPTS_ALLOWED variable and
+and referencing the randint() function defined in that module (ranging from 1 to
+10). I then assign the random number generated to a variable called random.
+Since the user fails after six tries, I assign 6 to the guess_limit variable and
 they will lose one every time a guess is made. The guess is assigned to the
 GUESS variable. A False Boolean is assigned to the done variable to keep the
 game running until it becomes True, which means that the game is done
 
-Whenever a guess is made, it is evaluated by the procedure InputValidation(),
-using a while loop to check whether it is valid, which means whether it is in
-the range between 1 and 6. If it is an invalid guess (the procedure returns
-False), the user has to make a new one until it is valid (the procedure returns
-True). Provided that the guess is invalid, the user still maintains their number
-of guesses.
+Whenever a guess is made, it is evaluated by the function valite_input(), using
+a while loop to check whether it is valid, which means whether it is in the
+range between 1 and 6. If it is an invalid guess (the function returns False),
+the user has to make a new one until it is valid (the function returns True).
+Provided that the guess is invalid, the user still maintains their number of
+guesses.
 
 Now that the guess is valid, one chance will be taken away. Afterwards, a while
 loop is used to evaluate that guess so long as the user still has at least one
@@ -34,7 +35,7 @@ random number generated to check whether it is too low or too high, or equal:
   variable becomes True and ends the game.
 - If they are not equal, the user then makes another guess on the condition that
   they have not lost all chances and the game is still running. As always, the
-  new guess is then evaluated again by the procedure InputValidation() to check
+  new guess is then evaluated again by the function validate_input() to check
   for its validity.
 
 When the user reaches their last chance and the game still runs, meaning that
@@ -43,7 +44,7 @@ evaluated with the number generated, and only two options are presented:
 - If they are equal, a congratulatory message will be printed.
 - If they are still not equal, a 'Game Over' message will be printed.
 
-In both cases, the game ends and the while loop is finished.
+In both cases, the game ends and the while loop is displayed.
 
 # Why a for loop is unsuitable for this guessing game
 _While_ loops | _For_ loops
