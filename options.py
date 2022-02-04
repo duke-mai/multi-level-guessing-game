@@ -43,7 +43,7 @@ def try_again():
     again = input('Do you want to play again? [Y/n] ')
     print()
     if again.lower() in ['y', 'yes']:
-        welcome.start_the_game()
+        welcome.start_game()
     elif again.lower() in ['n', 'no']:
         print('Thanks for playing the game!')
     else:
