@@ -49,5 +49,5 @@ def start_the_game():
         option.hard()
         option.try_again()
     else:
-        print('INVALID VALUE! Please try again.\n')
+        print('ERROR! Invalid value! Please try again.\n')
         start_the_game()
