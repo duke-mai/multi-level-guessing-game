@@ -6,18 +6,18 @@ be used as modules.
 # Implementation
 I begin by greeting the user and prompt them to choose which level (easy,
 medium, or hard) they want to play | welcome.py. With that option, I then start
-the corresponding function which is stored in game_options.py
+the corresponding function which is stored in options.py
 
 Taking easy level as an example, when the game starts (which now go to the
-module game_body.py, I generate random numbers by importing the random module
+module operations.py, I generate random numbers by importing the random module
 and referencing the randint() function defined in that module (ranging from 1 to
 10). I then assign the random number generated to a variable called random.
 Since the user fails after six tries, I assign 6 to the guess_limit variable and
 they will lose one every time a guess is made. The guess is assigned to the
-GUESS variable. A False Boolean is assigned to the done variable to keep the
+guess variable. A False Boolean is assigned to the done variable to keep the
 game running until it becomes True, which means that the game is done
 
-Whenever a guess is made, it is evaluated by the function valite_input(), using
+Whenever a guess is made, it is evaluated by the function validate_input(), using
 a while loop to check whether it is valid, which means whether it is in the
 range between 1 and 6. If it is an invalid guess (the function returns False),
 the user has to make a new one until it is valid (the function returns True).
@@ -46,7 +46,7 @@ evaluated with the number generated, and only two options are presented:
 
 In both cases, the game ends and the while loop is displayed.
 
-# Why a for loop is unsuitable for this guessing game
+# For loop or While loop to be used ?
 _While_ loops | _For_ loops
 ------------ | -------------
 Condition-controlled loop  | Count-controlled loop
@@ -60,9 +60,29 @@ condition – the user input guess is between 1 and 5 – is met. This problem,
 therefore, should be addressed with a while loop instead of a for loop.
 
 # Sample Output
-An example of an invalid guess being ruled out and no chance is taken away
-![An example of an invalid guess being ruled out and no chance is taken
-away](/assets/invalid-guess.png)
+```
+Hello, Welcome to the Number Guessing Game!
+I'm Henry! What's Your Name? Jack
+Okay, Jack. Let's Begin The Guessing Game!
+Choose a level:
+1. Easy
+2. Medium
+3. Hard
+Pick a number: 3
 
-An example of guessing correctly<br>
-![An example of guessing correctly](/assets/correct-guess.png)
+You are to guess a number between 1 and 50 in no more than 3 attempts.
+What is your guess? 3
+It should be higher than 3.
+You still have 2 chances left.
+
+Try a new guess: 15
+It should be higher than 15.
+You still have 1 chances left.
+
+Try a new guess: 20
+GAME OVER! It took you more than 3 attempts. The correct number is 41.
+
+Do you want to play again? [Y/n] n
+
+Thanks for playing !
+```
