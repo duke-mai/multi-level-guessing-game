@@ -22,7 +22,7 @@ def start_the_game():
     print('Hello, Welcome to the Number Guessing Game!')
     name = input('I\'m Henry! What\'s Your Name? ')
     sleep(1)
-    
+
     print(f'Okay, {name}. Let\'s Begin The Guessing Game!')
     print('Choose a level:',
           '1. Easy',
@@ -34,7 +34,7 @@ def start_the_game():
     level = int(input('Pick a number: '))
     print()
     sleep(1)
-    
+
     if level == 1:
         option.easy()
         option.try_again()

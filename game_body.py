@@ -17,7 +17,7 @@ def guessing(GUESS_RANGE, GUESS_LIMIT):
     GUESS = int(input('What is your guess? '))
     ATTEMPTS_ALLOWED = GUESS_LIMIT
     done = False
-    
+
     # Validate the inputted guess.
     GUESS = InputValidation(GUESS, GUESS_RANGE)
 
@@ -39,7 +39,7 @@ def guessing(GUESS_RANGE, GUESS_LIMIT):
                 # Another input validation loop.
                 GUESS = InputValidation(GUESS, GUESS_RANGE)
         elif GUESS_LIMIT == 0 and not done:                 # Last chance to guess
-            if GUESS == RANDOM:        
+            if GUESS == RANDOM:
                 print(f'You nailed it! However, it took you all the {ATTEMPTS_ALLOWED} attempts.')
             else:
                 print(
