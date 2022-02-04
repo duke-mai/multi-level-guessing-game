@@ -22,7 +22,7 @@ from time import sleep
 
 
 # ---------------------------- Function Definition ----------------------------
-def start_the_game():
+def start_game():
     print('Hello, Welcome to the Number Guessing Game!')
     name = input('I\'m Henry! What\'s Your Name? ')
     sleep(1)
@@ -50,4 +50,4 @@ def start_the_game():
         option.try_again()
     else:
         print('ERROR! Invalid value! Please try again.\n')
-        start_the_game()
+        start_game()

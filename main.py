@@ -15,9 +15,9 @@
 This module, although only 1, step-by-step includes all of the
 pre-defined modules in the other files.
 """
-from welcome import start_the_game
+from welcome import start_game
 
 
 # ------------------------------- Main Function -------------------------------
 if __name__ == '__main__':
-    start_the_game()
+    start_game()
