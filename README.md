@@ -59,7 +59,7 @@ user. Furthermore, this loop only gets finished provided that a certain
 condition – the user input guess is between 1 and 5 – is met. This problem,
 therefore, should be addressed with a while loop instead of a for loop.
 
-# Output
+# Sample Output
 An example of an invalid guess being ruled out and no chance is taken away
 ![An example of an invalid guess being ruled out and no chance is taken
 away](/assets/invalid-guess.png)
