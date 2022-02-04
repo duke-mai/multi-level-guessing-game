@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 #
-# File:         game_options.py
+# File:         options.py
 # Author:       Tan Duc Mai
 # Email:        tan.duc.work@gmail.com
 # Date:         15-Jul-2021
