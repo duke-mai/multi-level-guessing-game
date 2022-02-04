@@ -19,20 +19,20 @@ import random
 def guessing(GUESS_RANGE, guess_limit):
     # Set the initial values.
     ATTEMPTS_ALLOWED = guess_limit
-    random = random.randint(1, GUESS_RANGE)
+    rnd = random.randint(1, GUESS_RANGE)
     guess = int(input('What is your guess? '))
     done = False
 
     # Validate the inputted guess.
-    guess = InputValidation(guess, GUESS_RANGE)
+    guess = validate_input(guess, GUESS_RANGE)
 
     # Now we have a valid guess.
     while guess_limit > 0 and not done:
         guess_limit -= 1                     # Take one guess = lose one chance
         if guess_limit > 0:
-            if guess < random:
+            if guess < rnd:
                 print(f'It should be higher than {guess}.')
-            elif guess > random:
+            elif guess > rnd:
                 print(f'It should be lower than {guess}.')
             else:
                 attempts_taken = ATTEMPTS_ALLOWED - guess_limit
@@ -44,12 +44,12 @@ def guessing(GUESS_RANGE, guess_limit):
                 # Another input validation loop.
                 guess = validate_input(guess, GUESS_RANGE)
         elif guess_limit == 0 and not done:                 # Last chance to guess
-            if guess == random:
+            if guess == rnd:
                 print(f'You nailed it! However, it took you all the {ATTEMPTS_ALLOWED} attempts.')
             else:
                 print(
                     f'GAME OVER! It took you more than {ATTEMPTS_ALLOWED} attempts. '
-                    f'The correct number is {random}.'
+                    f'The correct number is {rnd}.'
                 )
 
 
