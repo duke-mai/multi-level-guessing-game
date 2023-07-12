@@ -15,7 +15,7 @@
 
 # ------------------------------- Module Imports ------------------------------
 """
-The game_options module contains the user choice of easy, medium, and hard mode.
+The game_options module contains 3 user choices: easy, medium, and hard mode.
 It also asks whether the user want to play the game again.
 The time.sleep() function gives break between each set of message.
 """
@@ -34,8 +34,8 @@ def start_game():
           '1. Easy',
           '2. Medium',
           '3. Hard',
-          sep = '\n',
-    )
+          sep='\n',
+          )
     sleep(1)
     level = int(input('Pick a number: '))
     print()
