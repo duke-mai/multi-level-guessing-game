@@ -1,9 +1,22 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+# Table of Contents
+
+- [Aim](#aim)
+- [Implementation](#implementation)
+- [For versus While](#for-versus-while)
+- [Sample Output](#sample-output)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Aim
-Create a number guessing game divided into three levels of difficulty.
-I divide this project into small functions and place them in separate files to
-be used as modules.
+
+Create a number guessing game divided into three levels of difficulty. I divide
+this project into small functions and place them in separate files to be used as
+modules.
 
 # Implementation
+
 I begin by greeting the user and prompt them to choose which level (easy,
 medium, or hard) they want to play | welcome.py. With that option, I then start
 the corresponding function which is stored in options.py
@@ -17,12 +30,12 @@ they will lose one every time a guess is made. The guess is assigned to the
 guess variable. A False Boolean is assigned to the done variable to keep the
 game running until it becomes True, which means that the game is done
 
-Whenever a guess is made, it is evaluated by the function validate_input(), using
-a while loop to check whether it is valid, which means whether it is in the
-range between 1 and 6. If it is an invalid guess (the function returns False),
-the user has to make a new one until it is valid (the function returns True).
-Provided that the guess is invalid, the user still maintains their number of
-guesses.
+Whenever a guess is made, it is evaluated by the function validate_input(),
+using a while loop to check whether it is valid, which means whether it is in
+the range between 1 and 6. If it is an invalid guess (the function returns
+False), the user has to make a new one until it is valid (the function returns
+True). Provided that the guess is invalid, the user still maintains their number
+of guesses.
 
 Now that the guess is valid, one chance will be taken away. Afterwards, a while
 loop is used to evaluate that guess so long as the user still has at least one
@@ -46,11 +59,12 @@ evaluated with the number generated, and only two options are presented:
 
 In both cases, the game ends and the while loop is displayed.
 
-# For loop or While loop to be used ?
-_While_ loops | _For_ loops
------------- | -------------
-Condition-controlled loop  | Count-controlled loop
-They are better to use whenever the programmer needs to keep on repeating some code while a certain condition is met. | They are not necessary but simplify the code when the number of repetitions is known.
+# For versus While
+
+_While_ loops                                                                                                        | _For_ loops
+------------                                                                                                         | -------------
+Condition-controlled loop                                                                                            | Count-controlled loop
+They are better to use whenever the programmer needs to keep on repeating some code while a certain condition is met | They are not necessary but simplify the code when the number of repetitions is known
 
 Regarding the while loop evaluating whether the guessed number is valid, it
 helps rule out any invalid guess. In this case, the number of times this loop
@@ -60,6 +74,7 @@ condition – the user input guess is between 1 and 5 – is met. This problem,
 therefore, should be addressed with a while loop instead of a for loop.
 
 # Sample Output
+
 ```
 Hello, Welcome to the Number Guessing Game!
 I'm Henry! What's Your Name? Jack
