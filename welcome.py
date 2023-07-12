@@ -3,11 +3,10 @@
 
 # =============================================================================
 #
-# File:         welcome.py
-# Author:       Tan Duc Mai
-# Email:        tan.duc.work@gmail.com
-# Date:         15-Jul-2021
-# Description:  Introduces the user to the game, asking them to choose level.
+#        FILE:  welcome.py
+#      AUTHOR:  Tan Duc Mai <henryfromvietnam@gmail.com>
+#     CREATED:  2021-07-15
+# DESCRIPTION:  Introduces the user to the game, asking them to choose level.
 #   I hereby declare that I completed this work without any improper help
 #   from a third party and without using any aids other than those cited.
 #

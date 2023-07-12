@@ -3,11 +3,10 @@
 
 # =============================================================================
 #
-# File:         main.py
-# Author:       Tan Duc Mai
-# Email:        tan.duc.work@gmail.com
-# Date:         15-Jul-2021
-# Description:  Combines all of the function and runs at once.
+#        FILE:  main.py
+#      AUTHOR:  Tan Duc Mai <henryfromvietnam@gmail.com>
+#     CREATED:  2021-07-15
+# DESCRIPTION:  Combines all of the function and runs at once.
 #   I hereby declare that I completed this work without any improper help
 #   from a third party and without using any aids other than those cited.
 #
