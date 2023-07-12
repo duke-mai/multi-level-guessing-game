@@ -26,17 +26,20 @@ import welcome
 
 # ---------------------------- Function Definitions ---------------------------
 def easy():
-    print('You are to guess a number between 1 and 10 in no more than 6 attempts.')
+    print('You are to guess a number between 1 and 10 '
+          'in no more than 6 attempts.')
     game(10, 6)
 
 
 def medium():
-    print('You are to guess a number between 1 and 20 in no more than 4 attempts.')
+    print('You are to guess a number between 1 and 20 '
+          'in no more than 4 attempts.')
     game(20, 4)
 
 
 def hard():
-    print('You are to guess a number between 1 and 50 in no more than 3 attempts.')
+    print('You are to guess a number between 1 and 50 '
+          'in no more than 3 attempts.')
     game(50, 3)
 
 
