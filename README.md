@@ -11,9 +11,11 @@
 
 # Aim
 
-Create a number guessing game divided into three levels of difficulty. I divide
-this project into small functions and place them in separate files to be used as
-modules.
+Design and implement a modular command-line number guessing game with three 
+difficulty tiers (Easy, Medium, Hard). The project emphasises clean code 
+organisation by dividing functionality into reusable Python modules, 
+demonstrating best practices in logic control, user input validation, and 
+procedural game design.
 
 # Implementation
 
